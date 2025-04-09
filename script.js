@@ -42,11 +42,7 @@ window.addEventListener("load", () => {
   }, 9000);
 });
 
-// 🎨 Modo oscuro automático por horario
-const hora = new Date().getHours();
-if (hora >= 19 || hora <= 6) {
-  document.body.style.backgroundColor = "#1a1a1a";
-  document.body.style.color = "#eee";
+
 }
 
 // 🌈 Scroll suave para anclas internas
