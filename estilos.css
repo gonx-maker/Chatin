@@ -157,3 +157,62 @@ footer {
     font-size: 1.2rem;
   }
 }
+/* === MODO NOCHE / DÍA === */
+
+body.noche {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.noche main section,
+body.noche #sobre,
+body.noche #contacto {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 10px rgba(255,255,255,0.05);
+}
+
+body.noche nav a {
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+body.noche nav a:hover {
+  background-color: #f0f0f0;
+  color: #121212;
+}
+
+body.noche footer {
+  background-color: #1e1e1e;
+  color: #ccc;
+}
+
+body.noche header {
+  background: linear-gradient(to right, #3a3a3a, #2e2e2e);
+  color: #f0f0f0;
+}
+
+body.noche header h1 {
+  color: #f0f0f0;
+}
+
+button#modoBtn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+button#modoBtn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
