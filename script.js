@@ -45,18 +45,7 @@ window.addEventListener("load", () => {
 
 }
 
-// 🌈 Scroll suave para anclas internas
-document.querySelectorAll('a[href^="#"]').forEach(enlace => {
-  enlace.addEventListener('click', function (e) {
-    e.preventDefault();
-    const destino = document.querySelector(this.getAttribute('href'));
-    if (destino) {
-      destino.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  });
-});
+
 
 // 📥 Mensaje al descargar archivos
 document.querySelectorAll('a[href$=".pdf"], a[href$=".doc"]').forEach(link => {
