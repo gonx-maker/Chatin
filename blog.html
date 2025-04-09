@@ -1,41 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="El blog creativo de Chatin. Historias, ideas y recursos para inspirarte." />
-  <meta name="google-site-verification" content="DyTz134libBRFN4gMvotUqNZHsED78lIKQzONIY4SAY" />
-  <title>Blog de Chatin</title>
-  <link rel="stylesheet" href="estilos.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap">
-  <link rel="icon" type="image/png" href="chatin biblioteca.png">
-  <script src="script.js" defer></script>
+<main>
+  <section class="bienvenida">
+    <h2>Bienvenid@ al rincón creativo de Chatin 🧩</h2>
+    <p>Acá vas a encontrar ideas locas, historias personales y recursos gratuitos para crear tu propio universo digital.</p>
+  </section>
 
-</head>
-
-<body>
-  <header>
-    <h1>🧠 Blog de Chatin</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="historia-bobby.html">La historia de Bobby</a></li>
-        <li><a href="quien-es-chatin.html">¿Quién es Chatin?</a></li>
-        <li><a href="harlem.html">Harlem</a></li>
-        <li><a href="la tormenta del desierto rojo.html">Tormenta del Desierto</a></li>
-        <li><a href="fix.html">Phil</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="bienvenida">
-      <h2>Bienvenid@ al rincón creativo de Chatin 🧩</h2>
-      <p>Acá vas a encontrar ideas locas, historias personales y recursos gratuitos para crear tu propio universo digital.</p>
-    </section>
-
+  <div class="contenido-con-aside">
     <section id="posts">
       <article class="post">
         <h3><a href="quien-es-chatin.html">✨ Primer Post: ¿Quién es Chatin?</a></h3>
@@ -68,30 +37,29 @@
       </article>
     </section>
 
-    <section id="contacto">
-      <h2>Contacto 🤙</h2>
-      <p>¿Querés colaborar o contarme tu idea?</p>
-      <ul>
-        <li>📧 goncalo.arias@gmail.com</li>
-        <li>📱 WhatsApp: <a href="https://wa.me/541170809692" target="_blank">+54 11 7080-9692</a></li>
-      </ul>
-    </section>
-  </main>
+    <aside class="publicidad">
+      <h3>🤑 Publicidad</h3>
 
-  <footer>
-    <p></p>
-  </footer>
+      <div class="anuncio">
+        <p><strong>🔥 ¡Crea tu tienda online ahora!</strong></p>
+        <p>Diseños únicos, con carrito y pagos integrados.</p>
+        <a href="https://wa.me/541170809692" target="_blank">Contactá a Gonxza 💬</a>
+      </div>
 
-  <!-- Script de Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMRR1YS98H"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-DMRR1YS98H');
-  </script>
+      <div class="anuncio">
+        <p><strong>🎨 Posts para redes</strong></p>
+        <p>Publicaciones impactantes, diseñadas a tu estilo.</p>
+        <a href="#">Ver más</a>
+      </div>
+    </aside>
+  </div>
 
-  <!-- Tu script personalizado -->
-  <script src="script.js"></script>
-</body>
-</html>
+  <section id="contacto">
+    <h2>Contacto 🤙</h2>
+    <p>¿Querés colaborar o contarme tu idea?</p>
+    <ul>
+      <li>📧 goncalo.arias@gmail.com</li>
+      <li>📱 WhatsApp: <a href="https://wa.me/541170809692" target="_blank">+54 11 7080-9692</a></li>
+    </ul>
+  </section>
+</main>
