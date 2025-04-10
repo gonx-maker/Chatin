@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="El blog creativo de Chatin. Historias, ideas y recursos para inspirarte." />
+  <meta name="google-site-verification" content="DyTz134libBRFN4gMvotUqNZHsED78lIKQzONIY4SAY" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blog de Chatin">
+  <meta property="og:description" content="El blog creativo de Chatin. Historias, ideas y recursos para inspirarte.">
+  <meta property="og:image" content="url_a_tu_imagen.jpg">
+  <meta property="og:url" content="http://tublog.com">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:title" content="Blog de Chatin">
+  <meta name="twitter:description" content="El blog creativo de Chatin. Historias, ideas y recursos para inspirarte.">
+  <meta name="twitter:image" content="url_a_tu_imagen.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>Blog de Chatin</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap">
+  <link rel="icon" type="image/png" href="chatin biblioteca.png">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>🧠 Blog de Chatin</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="historia-bobby.html">La historia de Bobby</a></li>
+        <li><a href="quien-es-chatin.html">¿Quién es Chatin?</a></li>
+        <li><a href="harlem.html">Harlem</a></li>
+        <li><a href="la tormenta del desierto rojo.html">Tormenta del Desierto</a></li>
+        <li><a href="fix.html">Phil</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="bienvenida">
+      <h2>Bienvenid@ al rincón creativo de Chatin 🧩</h2>
+      <p>Acá vas a encontrar ideas locas, historias personales y recursos gratuitos para crear tu propio universo digital.</p>
+    </section>
+    <div class="contenido-con-aside">
+      <section id="posts">
+        <!-- Artículos -->
+      </section>
+      <aside class="publicidad">
+        <h3>🤑 Publicidad</h3>
+        <div class="anuncio">
+          <p><strong>🔥 ¡Crea tu tienda online ahora!</strong></p>
+          <p>Diseños únicos, con carrito y pagos integrados.</p>
+          <a href="https://wa.me/541170809692" target="_blank">Contactá a Gonxza 💬</a>
+        </div>
+        <div class="facebook-chatin">
+          <a href="#" target="_blank">
+            <img src="./facebook.jpg" alt="Facebook de Chatin" style="width: 100%; border-radius: 10px; margin-top: 1rem;">
+            <p style="text-align: center; margin-top: 0.5rem;">/ Facebook Chatin</p>
+          </a>
+        </div>
+      </aside>
+    </div>
+    <section id="contacto">
+      <h2>Contacto 🤙</h2>
+      <p>¿Querés colaborar o contarme tu idea?</p>
+      <ul>
+        <li>📧 goncalo.arias@gmail.com</li>
+        <li>📱 WhatsApp: <a href="https://wa.me/541170809692" target="_blank">+54 11 7080-9692</a></li>
+      </ul>
+    </section>
+    <section id="comentarios">
+      <h2>💬 Comentarios</h2>
+      <form id="formularioComentario">
+        <input type="text" id="nombre" placeholder="Tu nombre" required>
+        <textarea id="comentario" placeholder="Escribí tu comentario..." required></textarea>
+        <button type="submit">Enviar comentario</button>
+      </form>
+      <div id="listaComentarios"></div>
+    </section>
+  </main>
+  <footer><p></p></footer>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMRR1YS98H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-DMRR1YS98H');
+  </script>
+  <script src="script.js"></script>
+</body>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+  const firebaseConfig = {
+    apiKey: "AIzaSyC1oDxzmj8_BhqOLxQ2Jtxo67VDGkzawVU",
+    authDomain: "blog-chatin-comentarios.firebaseapp.com",
+    projectId: "blog-chatin-comentarios",
+    storageBucket: "blog-chatin-comentarios.firebasestorage.app",
+    messagingSenderId: "184796130867",
+    appId: "1:184796130867:web:76f5470ec0b53247b67d46"
+  };
+  const app = initializeApp(firebaseConfig);
+</script>
+</html>

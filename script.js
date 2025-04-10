@@ -1,0 +1,1 @@
+document.getElementById('formularioComentario').addEventListener('submit', function(e) { e.preventDefault(); alert('Comentario enviado.'); });
